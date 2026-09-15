@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #F5F7FA;
+    color: #333;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.brand {
+    font-family: "Playfair Display", serif;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: #071d38;
+    font-size: 18px;
+    padding: 0 15px;
+    gap: 20px;
+    transition: color 0.3s ease;
+    font-family: "Playfair Display", serif;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #E5B93F;
+}
+
+/* hero banner */
+.herobanner {
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0.3) 50%,
+            rgba(0, 0, 0, 0) 100%), url(./images/herobanner.jpeg);
+    height: 500px;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.herocontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+
+}
+
+.herotitle {
+    color: #f5f5f5;
+}
+
+.herotitle span {
+    color: #E5B93F;
+}
+
+.herohead {
+    font-family: "Playfair Display", serif;
+    color: #f5f5f5;
+
+}
+
+.herohead span {
+    color: #E5B93F;
+
+}
+
+.heropara {
+    font-family: "Montserrat", sans-serif;
+    color: #f5f5f5;
+}
+
+.herobutton {
+    color: black;
+    font-size: 15px;
+    background-color: #E5B93F;
+    border: #071d38 solid 1px;
+    border-radius: 25px;
+    padding: 10px 15px;
+    width: fit-content;
+    transition: 1s ease;
+    margin-top: 15px;
+    font-weight: bold;
+
+
+}
+
+.herobutton:hover {
+    transform: scale(1.07);
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.25),
+        0 0 30px rgba(212, 175, 55, 0.6);
+}
+
+/* product section */
+.products {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.producthead {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    margin-top: 10px;
+}
+
+.productpara {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.productcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #F5F7FA;
+
+
+}
+
+.main-card {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+    transition: 0.5s ease;
+
+}
+
+.main-card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+
+}
+
+.btn {
+    --bs-btn-bg: #E5B93F;
+    --bs-btn-hover-border-color: #E5B93F;
+    --bs-btn-hover-bg: transparent;
+
+}
+
+/* carousel */
+
+.carousel-inner img {
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel {
+    margin: 20px 20px;
+}
+
+/* about us  */
+
+.abouthead {
+
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    margin-top: 10px;
+}
+
+.about-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
+    background-color: #071d38;
+    color: #f5f5f5;
+}
+
+.aboutcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.about-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.about-bname {
+    font-family: "Playfair Display", serif;
+}
+
+.aboutimg img {
+    height: 400px;
+    width: 100%;
+}
+
+/* contact us */
+.contact-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+}
+
+.contactdetails {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    align-items: start;
+    justify-content: center;
+}
+
+.connect i {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.contactform {
+    background-color: #ffffff;
+    padding: 20px 20px;
+    margin: 0px 30px;
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    background-color: #071d38;
+    color: #f5f5f5;
+    padding: 10px;
+
+}
