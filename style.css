@@ -65,9 +65,11 @@ body {
             rgba(0, 0, 0, 0.3) 50%,
             rgba(0, 0, 0, 0) 100%), url(./images/herobanner.jpeg);
     height: 500px;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    background-size: 100% 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-position: center;
+    overflow: hidden;
 
 }
 
@@ -76,6 +78,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding-left: 100px;
+    height: 100%;
 
 }
 
@@ -93,7 +96,7 @@ body {
 
 }
 
-.herohead span {
+span {
     color: #E5B93F;
 
 }
@@ -126,15 +129,14 @@ body {
 }
 
 /* product section */
+
 .products {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    padding: 20px 0;
 }
 
 .producthead {
     text-align: center;
     font-family: "Playfair Display", serif;
-    margin-top: 10px;
 }
 
 .productpara {
@@ -144,14 +146,11 @@ body {
 }
 
 .productcard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+    gap: 30px;
     background-color: #F5F7FA;
-
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 40px;
 }
 
 .main-card {
@@ -159,11 +158,15 @@ body {
     overflow: hidden;
     margin-top: 20px;
     transition: 0.5s ease;
+    width: 300px;
+
 
 }
 
 .main-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+    box-shadow: 0 4px 20px #585858;
+    cursor: pointer;
 }
 
 .card img {
@@ -190,13 +193,36 @@ body {
     margin: 20px 20px;
 }
 
+
+/* category */
+
+.categoryimg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 40px;
+}
+
+.catimg {
+    width: 100%;
+    height: 250px;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.catimg:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px #585858;
+    cursor: pointer;
+}
+
 /* about us  */
 
 .abouthead {
 
     text-align: center;
     font-family: "Playfair Display", serif;
-    margin-top: 10px;
 }
 
 .about-main {
@@ -264,4 +290,57 @@ body {
     color: #f5f5f5;
     padding: 10px;
 
+}
+
+footer p {
+    margin: 0;
+}
+
+/* responsive */
+
+/* tablet */
+@media (max-width: 992px) {
+    .herobanner {
+        background-size: 100% 100%;
+        background-position: center;
+
+    }
+
+    .herocontent {
+        padding-left: 60px;
+        height: 100%;
+
+    }
+
+}
+
+/* mobile */
+
+@media (max-width: 576px) {
+    .herobanner {
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .herocontent {
+        padding-left: 25px;
+    }
+
+    .herotitle {
+        font-size: 15px;
+    }
+
+    .herohead {
+        font-size: 25px;
+
+    }
+
+    .heropara {
+        font-size: 15px;
+    }
+
+    .herobutton {
+        font-size: 10px;
+        padding: 10px 15px;
+    }
 }
