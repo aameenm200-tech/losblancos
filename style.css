@@ -15,23 +15,18 @@ body {
     background-color: #F5F7FA;
     color: #333;
 }
+/* navbar */
 
 .navbar {
-    height: 60px;
     background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 10px 30px;
 
 }
 
 /* Logo */
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-
+display: flex;
+align-items: center;
 }
 
 .logo-img {
@@ -42,16 +37,19 @@ body {
 
 .brand {
     font-family: "Playfair Display", serif;
+    margin-left: 10px;
 }
 
-.navbar-nav .nav-link {
-    text-decoration: none;
-    color: #071d38;
-    font-size: 18px;
+.navbar-nav {
+    font-size: 20px;
     padding: 0 15px;
-    gap: 20px;
+    gap: 10px;
     transition: color 0.3s ease;
     font-family: "Playfair Display", serif;
+}
+
+.nav-link{
+ color: #071d38;
 }
 
 .navbar-nav .nav-link:hover {
@@ -150,7 +148,9 @@ span {
     background-color: #F5F7FA;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 0 40px;
+    justify-items: center;
+    padding: 0 30px;
+    margin: auto;
 }
 
 .main-card {
@@ -158,9 +158,8 @@ span {
     overflow: hidden;
     margin-top: 20px;
     transition: 0.5s ease;
-    width: 300px;
-
-
+    width: 275px;
+    box-sizing:border-box;
 }
 
 .main-card:hover {
@@ -279,7 +278,7 @@ span {
 .contactform {
     background-color: #ffffff;
     padding: 20px 20px;
-    margin: 0px 30px;
+    margin: 10px 30px;
 }
 
 /* footer */
@@ -303,6 +302,7 @@ footer p {
     .herobanner {
         background-size: 100% 100%;
         background-position: center;
+        height: 400px;
 
     }
 
@@ -312,7 +312,82 @@ footer p {
 
     }
 
+
+    /* product */
+
+    .productcard {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    justify-content: center;
+    padding: 0 30px;
+    gap: 30px;
 }
+.main-card {
+    width: 250px;
+    height:400px;
+    box-sizing: border-box;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+
+}
+.card-title{
+    font-size: 15px;
+}
+
+/* carousel */
+
+.carousel-inner img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* category */
+
+.categoryimg{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.catimg{
+    height: 250px;
+}
+
+/* about us */
+.about-main{
+    display: grid;
+    height: fit-content;
+}
+.about-logo{
+    width: 75px;
+    height: 75px;
+}
+.about-bname{
+    font-size: 25px;
+}
+.aboutpara{
+    font-size: 10px;
+}
+.aboutimg img {
+    height: 250px;
+    width: 100%;
+}
+
+/* contact */
+
+.contact-main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.contactdetails{
+    margin-left: 10px;
+}
+
+}
+
+
+
+
 
 /* mobile */
 
@@ -320,6 +395,7 @@ footer p {
     .herobanner {
         background-size: 100% 100%;
         background-position: center;
+        height: 300px;
     }
 
     .herocontent {
@@ -343,4 +419,60 @@ footer p {
         font-size: 10px;
         padding: 10px 15px;
     }
+
+    /* product */
+
+    .productcard {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 30px;
+}
+.main-card {
+    width: 200px;
+    height:400px;
+    box-sizing: border-box;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+
+}
+.card-title{
+    font-size: 15px;
+}
+
+/* carousel */
+
+.carousel-inner img {
+    height: 250px;
+    object-fit: cover;
+}
+/* category */
+
+.categoryimg{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.catimg{
+    height: 200px;
+}
+
+/* about us */
+.about-main{
+    display: block;
+    height: fit-content;
+}
+.aboutimg{
+    display: none;
+}
+
+/* contact */
+
+.contact-main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.contactdetails{
+    margin-left: 10px;
+}
 }
